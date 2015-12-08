@@ -6,3 +6,5 @@ go:
 services:
   - mysql
 sudo: required
+before_script:
+  - mysql -e 'create database sqlcond;'
