@@ -1,4 +1,4 @@
-# sqlcon d[![Build Status](https://travis-ci.org/WatchBeam/sqlcond.svg?branch=master)](https://travis-ci.org/WatchBeam/sqlcond) [![godoc reference](https://godoc.org/github.com/WatchBeam/sqlcond?status.png)](https://godoc.org/github.com/WatchBeam/sqlcond/pubsub)
+# sqlcond [![Build Status](https://travis-ci.org/WatchBeam/sqlcond.svg?branch=master)](https://travis-ci.org/WatchBeam/sqlcond) [![godoc reference](https://godoc.org/github.com/WatchBeam/sqlcond?status.png)](https://godoc.org/github.com/WatchBeam/sqlcond/pubsub)
 
 Little utility to wait for the database to match a state.
 
