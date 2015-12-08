@@ -1,9 +1,28 @@
 package sqlcond
 
 import (
+	"database/sql"
 	"testing"
 	"time"
 )
+
+func mustExec(db *sql.DB, query string) {
+	if _, err := db.Exec(query); err != nil {
+		panic(err)
+	}
+}
+
+func getDatabase() *sql.DB {
+	db, err := sql.Open("mysql", "root@/sqlcond")
+	if err != nil {
+		panic(err)
+	}
+
+	mustExec(db, "DROP TABLE IF EXISTS tt;")
+	mustExec(db, "CREATE TABLE `tt` (`id` INT NOT NULL);")
+
+	return db
+}
 
 func TestExistsWorks(t *testing.T) {
 	db := getDatabase()
