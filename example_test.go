@@ -3,9 +3,9 @@ package sqlcond_test
 import (
 	"database/sql"
 	"fmt"
-	"sqlcond"
 	"time"
 
+	"github.com/WatchBeam/sqlcond"
 	_ "github.com/go-sql-driver/mysql"
 )
 
